@@ -24,33 +24,33 @@ class CategoryOutput(BaseModel):
 FILE_PATH = (
     "/Users/jin/Desktop/classify_questions_test/Exam tagging sample questions.xlsx"
 )
-CHATGPT_OUTPUT_PATH_V1 = "chatgpt_result_v2.json"
-CHATGPT_OUTPUT_PATH_V2 = "chatgpt_result_v2.json"
-PERPLEXITY_OUTPUT_PATH = "perplexity_result.json"
+CHATGPT_OUTPUT_PATH_V1 = "results/chatgpt_result.json"
+CHATGPT_OUTPUT_PATH_V2 = "results/chatgpt_result_v2.json"
+PERPLEXITY_OUTPUT_PATH = "results/perplexity_result.json"
 
 # Processing and get question and answer pairs
 question_answer_pairs = extract_questions_and_correct_answers(FILE_PATH)
 
-# # Run with openai
-# model = LLMModel(LLMModelName.openai_4o_mini)
-# final_response = []
-# for i, item in enumerate(question_answer_pairs):
-#     final_prompt = prompt.format(
-#         definition_data=definition_data_v2,
-#         question_id=str(i + 1),
-#         question=item["processed_question"],
-#         answer=item["correct_answer"],
-#     )
-#     response = model.complete(system_message=final_prompt, output_format=CategoryOutput)
+# Run with openai
+model = LLMModel(LLMModelName.openai_4o_mini)
+final_response = []
+for i, item in enumerate(question_answer_pairs):
+    final_prompt = prompt.format(
+        definition_data=definition_data_v2,
+        question_id=str(i + 1),
+        question=item["processed_question"],
+        answer=item["correct_answer"],
+    )
+    response = model.complete(system_message=final_prompt, output_format=CategoryOutput)
 
-#     # Validate response
-#     validate_response = CategoryOutput.model_validate_json(response["content"])
-#     final_response.append(validate_response.model_dump_json())
-#     time.sleep(10)
+    # Validate response
+    validate_response = CategoryOutput.model_validate_json(response["content"])
+    final_response.append(validate_response.model_dump_json())
+    time.sleep(10)
 
-# # Write the list to a JSON file
-# with open(OUTPUT_PATH, "w") as json_file:
-#     json.dump(final_response, json_file, indent=4)
+# Write the list to a JSON file
+with open(CHATGPT_OUTPUT_PATH_V2, "w") as json_file:
+    json.dump(final_response, json_file, indent=4)
 
 # Run with perplexity
 final_response = []
@@ -72,7 +72,6 @@ for i, item in enumerate(question_answer_pairs):
     )
     output = json.loads(extract_json_response)
     final_response.append(output)
-    print(f"DONE {i + 1}")
     time.sleep(10)
 
 # Write the list to a JSON file
