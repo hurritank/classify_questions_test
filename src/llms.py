@@ -129,18 +129,16 @@ def perplexity_chat_completions(
     response = requests.request(
         "POST", APIURL.perplexity.value, json=payload, headers=headers
     )
-    return response
-    # if response.status == 200:
-    #     output = response.json()
-    #     return output
-    # elif response.status == 401:
-    #     raise PermissionError("Authentication failed. Check your API key.")
-    # elif response.status == 400:
-    #     raise ValueError("Bad Request. Check your payload.")
-    # elif response.status == 404:
-    #     raise ValueError("Resource not found.")
-    # elif response.status == 500:
-    #     raise RuntimeError("Server Error. Please try again later.")
-    # else:
-    #     # For any other status code, raise an HTTPError
-    #     raise requests.HTTPError(f"Unexpected status code: {response.status}")
+    if response.status_code == 200:
+        return response
+    elif response.status_code == 401:
+        raise PermissionError("Authentication failed. Check your API key.")
+    elif response.status_code == 400:
+        raise ValueError("Bad Request. Check your payload.")
+    elif response.status_code == 404:
+        raise ValueError("Resource not found.")
+    elif response.status_code == 500:
+        raise RuntimeError("Server Error. Please try again later.")
+    else:
+        # For any other status code, raise an HTTPError
+        raise requests.HTTPError(f"Unexpected status code: {response.status}")
