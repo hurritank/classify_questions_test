@@ -1,0 +1,177 @@
+[
+    {
+        "id": 1,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Diagnostic Testing and Procedures",
+        "probability": 0.8
+    },
+    {
+        "id": 2,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Non-Pharmacologic and Pharmacologic Treatments and Procedures",
+        "probability": 0.9
+    },
+    {
+        "id": 3,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Diagnostic Testing and Procedures",
+        "probability": 0.95
+    },
+    {
+        "id": 4,
+        "domain": "Clinical Practice",
+        "subdomain": "Knowledge",
+        "third_level_category": "Standards of Care and Clinical Guidelines",
+        "probability": 0.8
+    },
+    {
+        "id": 5,
+        "domain": "Clinical Practice",
+        "subdomain": "Knowledge",
+        "third_level_category": "Standards of Care and Clinical Guidelines",
+        "probability": 0.8
+    },
+    {
+        "id": 6,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Non-Pharmacologic and Pharmacologic Treatments and Procedures",
+        "probability": 0.9
+    },
+    {
+        "id": 7,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Non-Pharmacologic and Pharmacologic Treatments and Procedures",
+        "probability": 0.9
+    },
+    {
+        "id": 8,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Non-Pharmacologic and Pharmacologic Treatments and Procedures",
+        "probability": 0.9
+    },
+    {
+        "id": 9,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Diagnostic Testing and Procedures",
+        "probability": 0.9
+    },
+    {
+        "id": 10,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Diagnostic Testing and Procedures",
+        "probability": 0.9
+    },
+    {
+        "id": 11,
+        "domain": "Core Competencies",
+        "subdomain": "Skill",
+        "third_level_category": "Advanced Physical Assessment",
+        "probability": 0.7
+    },
+    {
+        "id": 12,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Diagnostic Testing and Procedures",
+        "probability": 0.9
+    },
+    {
+        "id": 13,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Diagnostic Testing and Procedures",
+        "probability": 0.9
+    },
+    {
+        "id": 14,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Non-Pharmacologic and Pharmacologic Treatments and Procedures",
+        "probability": 0.9
+    },
+    {
+        "id": 15,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Diagnostic Testing and Procedures",
+        "probability": 0.9
+    },
+    {
+        "id": 16,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Non-Pharmacologic and Pharmacologic Treatments and Procedures",
+        "probability": 0.9
+    },
+    {
+        "id": 17,
+        "domain": "Core Competencies",
+        "subdomain": "Knowledge",
+        "third_level_category": "Advanced Pathophysiology",
+        "probability": 0.9
+    },
+    {
+        "id": 18,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Diagnostic Testing and Procedures",
+        "probability": 0.95
+    },
+    {
+        "id": 19,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Diagnostic Testing and Procedures",
+        "probability": 0.9
+    },
+    {
+        "id": 20,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Non-Pharmacologic and Pharmacologic Treatments and Procedures",
+        "probability": 0.8
+    },
+    {
+        "id": 21,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Non-Pharmacologic and Pharmacologic Treatments and Procedures",
+        "probability": 0.9
+    },
+    {
+        "id": 22,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Non-Pharmacologic and Pharmacologic Treatments and Procedures",
+        "probability": 0.9
+    },
+    {
+        "id": 23,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Diagnostic Testing and Procedures",
+        "probability": 0.9
+    },
+    {
+        "id": 24,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Diagnostic Testing and Procedures",
+        "probability": 0.95
+    },
+    {
+        "id": 25,
+        "domain": "Clinical Practice",
+        "subdomain": "Skill",
+        "third_level_category": "Diagnostic Testing and Procedures",
+        "probability": 0.8
+    }
+]
